@@ -32,7 +32,7 @@ function App() {
     if(match){
       setmeaning(match.meaning)
     }else{
-      setmeaning("Word not found in dictionary")
+      setmeaning("Word not found in the dictionary.")
     }
     // setInput("")
 
@@ -41,7 +41,7 @@ function App() {
         <div className='App'>  
         <h1>Dictionary App</h1>
         <form onSubmit={HandleClick}>
-          <input  value={input} onChange={handleChange}/> <button type='submit'>Search</button>
+          <input type='text' value={input} onChange={handleChange}/> <button type='submit'>Search</button>
         </form>   
         <h2>Definition:</h2>
         {meaning && <p> {meaning}</p> }  
